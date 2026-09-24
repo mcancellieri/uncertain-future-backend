@@ -14,7 +14,7 @@ print("Preloading audio assets into RAM...")
 # Preload all 85 sentence clips into RAM
 MEM_CLIPS = {}
 for i in range(1, 86):
-    file_path = os.path.join(ASSETS_DIR, "uncertainfutures", f"part_{i}.mp3")
+    file_path = os.path.join(ASSETS_DIR, f"part_{i}.mp3")
     MEM_CLIPS[i] = AudioSegment.from_mp3(file_path)
 
 # Preload background music at -18dB volume
